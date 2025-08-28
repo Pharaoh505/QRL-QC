@@ -1,0 +1,28 @@
+env:
+  n_qubits: 1
+  n_controls: 1
+  max_steps: 20
+  target: "X"
+  fidelity_threshold: 0.995
+
+agent:
+  hidden_size: 256
+  lr: 0.00015
+  gamma: 0.99
+  gae_lambda: 0.95
+  ppo_clip: 0.2
+  epochs: 20
+  batch_size: 256
+  minibatch_size: 64
+  ent_coef: 0.01
+  vf_coef: 0.5
+
+training:
+  total_timesteps: 500000
+  save_path: "models/control.pth"
+
+seed: 42
+
+render:
+  record_every: 50
+  video_fps: 8
