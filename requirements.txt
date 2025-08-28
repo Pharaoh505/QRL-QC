@@ -1,0 +1,8 @@
+numpy
+torch
+gym
+pennylane
+matplotlib
+imageio
+pyyaml
+tqdm
